@@ -20,6 +20,8 @@ jobs:
 
       - name: build
         run: npm run build
+        env:
+          URL_PREFIX: Next.js-Sample-Blog
 
       - name: Export Static HTML
         run: npm run export
