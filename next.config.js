@@ -1,4 +1,8 @@
-const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
+const REPO_NAME = ''
+
+const urlPrefix = process.env.NODE_ENV === 'production'
+    ? '/' + REPO_NAME
+    : ''
 
 module.exports = {
   reactStrictMode: true,
