@@ -2,7 +2,9 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import * as React from "react";
+import * as React from "react"
+import profile from '/images/profile.jpg'
+import Image from "next/image"
 
 const name = 'quadseed'
 export const siteTitle = 'Website Mark.II Modified by quadseed'
@@ -31,8 +33,8 @@ export default function Layout({children, home }: {
             <header className={styles.header}>
                 {home ? (
                     <>
-                        <img
-                            src="/images/profile.jpg"
+                        <Image
+                            src={profile}
                             className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
                             alt={name}
                         />
@@ -42,8 +44,8 @@ export default function Layout({children, home }: {
                     <>
                         <Link href="/">
                             <a>
-                                <img
-                                    src="/images/profile.jpg"
+                                <Image
+                                    src={profile}
                                     className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                                     alt={name}
                                 />
