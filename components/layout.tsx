@@ -3,7 +3,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import * as React from "react"
-import profile from '/images/profile.jpg'
+import profile from '../public/images/profile.jpg'
 
 const name = 'quadseed'
 export const siteTitle = 'Website Mark.II Modified by quadseed'
